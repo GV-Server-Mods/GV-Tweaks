@@ -1,1 +1,1 @@
-Cubeblocks\CubeBlocks_HydrogenThrustersFX.xml
+CubeBlocks_HydrogenThrustersFX.xml

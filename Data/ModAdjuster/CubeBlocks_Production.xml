@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<!-- increase speed -->
+        <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+            <Id>
+                <TypeId>OxygenGenerator</TypeId>
+                <SubtypeId></SubtypeId>
+            </Id>
+            <IceConsumptionPerSecond>75</IceConsumptionPerSecond> <!-- vanilla = 25 -->
+            <OperationalPowerConsumption>1.5</OperationalPowerConsumption> <!-- vanilla = 1.5 -->
+        </Definition>
+		<!-- increase speed -->
+        <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+            <Id>
+                <TypeId>OxygenGenerator</TypeId>
+                <SubtypeId>OxygenGeneratorSmall</SubtypeId>
+            </Id>
+            <IceConsumptionPerSecond>15</IceConsumptionPerSecond> <!-- vanilla = 5 -->
+            <OperationalPowerConsumption>0.3</OperationalPowerConsumption> <!-- vanilla = 0.1 -->
+        </Definition>
+	</CubeBlocks>
+</Definitions>

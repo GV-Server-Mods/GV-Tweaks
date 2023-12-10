@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<!-- Switched to clean light pattern -->
+		<Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+			<Id>
+				<TypeId>ReflectorLight</TypeId>
+				<SubtypeId>LargeBlockFrontLight</SubtypeId>
+			</Id>
+			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+		</Definition>
+		<Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+			<Id>
+				<TypeId>ReflectorLight</TypeId>
+				<SubtypeId>SmallBlockFrontLight</SubtypeId>
+			</Id>
+			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+		</Definition>
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>OffsetSpotlight</SubtypeId>
+            </Id>
+            <ReflectorConeDegrees>60</ReflectorConeDegrees>
+        </Definition>
+		<!-- increased light distance of searchlights -->
+		<Definition xsi:type="MyObjectBuilder_SearchlightDefinition">
+			<Id>
+				<TypeId>Searchlight</TypeId>
+				<SubtypeId>SmallSearchlight</SubtypeId>
+			</Id>
+			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+		</Definition>
+		<Definition xsi:type="MyObjectBuilder_SearchlightDefinition">
+			<Id>
+				<TypeId>Searchlight</TypeId>
+				<SubtypeId>LargeSearchlight</SubtypeId>
+			</Id>
+			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

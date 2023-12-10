@@ -148,7 +148,7 @@
                 <SubtypeId>Battery</SubtypeId>
             </Id>
             <IsSource>true</IsSource>
-            <Priority>3</Priority>
+            <Priority>3</Priority> <!-- vanilla is 2 -->
         </DistributionGroup>
 
         <DistributionGroup>
@@ -157,7 +157,7 @@
                 <SubtypeId>Reactors</SubtypeId>
             </Id>
             <IsSource>true</IsSource>
-            <Priority>2</Priority>
+            <Priority>2</Priority> <!-- vanilla is 3 -->
         </DistributionGroup>
 
     </ResourceDistributionGroups>

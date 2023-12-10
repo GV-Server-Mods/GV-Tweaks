@@ -30,6 +30,9 @@ namespace GV_Settings
             foreach(var component in allDefs.OfType<MyPhysicalItemDefinition>()){
                 component.MinimalPricePerUnit = 0;
             }
+            foreach(var component in allDefs.OfType<ConsumableItemDefinition>()){
+                component.MinimalPricePerUnit = 0;
+            }
         }
     }
 }

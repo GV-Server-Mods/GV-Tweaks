@@ -13,7 +13,7 @@ namespace MikeDude.ArmorBalance
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_ShipGrinder), false)]
     public class ToolEnhancer : MyGameLogicComponent
     {
-        const float cubeDimensionsMultiplier = 0.8f; // Keen default is 0.5f;
+        const float cubeDimensionsMultiplier = 0.6f; // Keen default is 0.5f;
 
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
