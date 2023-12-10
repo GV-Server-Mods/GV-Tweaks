@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--Definition for container economy system-->
+	<Definition xsi:type="MyObjectbuilder_SessionComponentEconomyDefinition">
+		<Id>
+			<TypeId>MyObjectbuilder_SessionComponentEconomyDefinition</TypeId>
+			<SubtypeId>Default</SubtypeId>
+		</Id>
+		<!-- Free listing -->
+		<ListingFee>0</ListingFee>
+		<TransactionFee>0</TransactionFee>
+	</Definition>
+</Definitions>

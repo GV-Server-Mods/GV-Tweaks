@@ -1,3 +1,4 @@
+Components.xml
 CubeBlocks_Control.xml
 CubeBlocks_Energy.xml
 CubeBlocks_HydrogenThrustersFX.xml
@@ -6,3 +7,6 @@ CubeBlocks_Logistics.xml
 CubeBlocks_Production.xml
 CubeBlocks_Shelves.xml
 CubeBlocks_Tools.xml
+PhysicalItems.xml
+ResourceDistributionGroups.xml
+SessionComponents_Economy.xml

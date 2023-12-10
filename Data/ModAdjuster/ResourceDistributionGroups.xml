@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ResourceDistributionGroups>
+		<!-- Sources -->
+		<DistributionGroup>
+			<Id>
+				<TypeId>MyObjectBuilder_ResourceDistributionGroup</TypeId>
+				<SubtypeId>Battery</SubtypeId>
+			</Id>
+			<Priority>3</Priority>
+			<!-- vanilla is 2 -->
+		</DistributionGroup>
+		<DistributionGroup>
+			<Id>
+				<TypeId>MyObjectBuilder_ResourceDistributionGroup</TypeId>
+				<SubtypeId>Reactors</SubtypeId>
+			</Id>
+			<Priority>2</Priority>
+			<!-- vanilla is 3 -->
+		</DistributionGroup>
+	</ResourceDistributionGroups>
+</Definitions>

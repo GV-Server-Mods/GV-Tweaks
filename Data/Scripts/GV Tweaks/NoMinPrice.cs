@@ -10,12 +10,15 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VRage;
 using VRage.Game;
 using VRage.Game.Components;
 using VRage.Game.Definitions.SessionComponents;
+using VRage.Input;
 using VRage.Utils;
 using VRageMath;
 using VRageRender.Messages;
+using VRage.Network;
 
 namespace GV_Settings
 {
@@ -28,9 +31,6 @@ namespace GV_Settings
             var allDefs = MyDefinitionManager.Static.GetAllDefinitions();
 
             foreach(var component in allDefs.OfType<MyPhysicalItemDefinition>()){
-                component.MinimalPricePerUnit = 0;
-            }
-            foreach(var component in allDefs.OfType<ConsumableItemDefinition>()){
                 component.MinimalPricePerUnit = 0;
             }
         }

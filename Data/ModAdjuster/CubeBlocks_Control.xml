@@ -13,7 +13,7 @@
 				<Component Subtype="Motor" Count="1"/>
 				<Component Subtype="Display" Count="8"/>
 				<Component Subtype="Computer" Count="100"/>
-				<Component Subtype="SteelPlate" Count="20"/>
+				<Component Subtype="SteelPlate" Count="10"/>
 				<Component Subtype="BulletproofGlass" Count="60"/>
 			</Components>
 		</Definition>
