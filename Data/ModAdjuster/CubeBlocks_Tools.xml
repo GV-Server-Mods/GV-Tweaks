@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
-		<!-- Slightly increase drill size and increase impact strength -->
+		<!-- Slightly increase drill size and increase impact resistance -->
 		<Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
 			<Id>
 				<TypeId>Drill</TypeId>
@@ -14,7 +14,7 @@
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
-		<!-- Slightly increase drill size and increase impact strength -->
+		<!-- Slightly increase drill size and increase impact resistance -->
 		<Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
 			<Id>
 				<TypeId>Drill</TypeId>
@@ -27,7 +27,7 @@
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
-		<!-- double grinder size, increase offset -->
+		<!-- double grinder size, increase offset, increase impact resistance -->
 		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
 			<Id>
 				<TypeId>ShipGrinder</TypeId>
@@ -38,11 +38,33 @@
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
-		<!-- double grinder size, increase offset -->
+		<!-- double grinder size, increase offset, increase impact resistance -->
 		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
 			<Id>
 				<TypeId>ShipGrinder</TypeId>
 				<SubtypeId>SmallShipGrinder</SubtypeId>
+			</Id>
+			<SensorRadius>2.6</SensorRadius>
+			<SensorOffset>1</SensorOffset>
+			<DeformationRatio>0.2</DeformationRatio>
+			<UsesDeformation>false</UsesDeformation>
+		</Definition>
+		<!-- increase impact resistance -->
+		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
+			<Id>
+				<TypeId>ShipWelder</TypeId>
+				<SubtypeId>LargeShipWelder</SubtypeId>
+			</Id>
+			<SensorRadius>2.8</SensorRadius>
+			<SensorOffset>1.0</SensorOffset>
+			<DeformationRatio>0.2</DeformationRatio>
+			<UsesDeformation>false</UsesDeformation>
+		</Definition>
+		<!-- increase impact resistance -->
+		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
+			<Id>
+				<TypeId>ShipWelder</TypeId>
+				<SubtypeId>SmallShipWelder</SubtypeId>
 			</Id>
 			<SensorRadius>2.6</SensorRadius>
 			<SensorOffset>1</SensorOffset>
