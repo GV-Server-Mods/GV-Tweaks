@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_OffensiveCombatCircleOrbitDefinition">
+			<Id>
+				<TypeId>OffensiveCombatCircleOrbit</TypeId>
+				<SubtypeId>OffensiveCombatBlock</SubtypeId>
+			</Id>
+			<MaximalCircleOrbitDistance>7000</MaximalCircleOrbitDistance>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_OffensiveCombatHitAndRunDefinition">
+			<Id>
+				<TypeId>OffensiveCombatHitAndRun</TypeId>
+				<SubtypeId>OffensiveCombatBlock</SubtypeId>
+			</Id>
+			<DefaultBreakOffDistance>500</DefaultBreakOffDistance>
+			<DefaultRetreatDistance>1000</DefaultRetreatDistance>
+			<MaxRetreatDistance>6000</MaxRetreatDistance>
+			<MaxBreakOffDistance>5900</MaxBreakOffDistance>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_OffensiveCombatStayAtRangeDefinition">
+			<Id>
+				<TypeId>OffensiveCombatStayAtRange</TypeId>
+				<SubtypeId>OffensiveCombatBlock</SubtypeId>
+			</Id>
+			<MaxMaximalDistance>6000</MaxMaximalDistance>
+			<MaxMinimalDistance>5999</MaxMinimalDistance>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_SearchEnemyComponentDefinition">
+			<Id>
+				<TypeId>SearchEnemyComponent</TypeId>
+				<SubtypeId>DefaultEnemySearch</SubtypeId>
+			</Id>
+			<SearchRadius>6000</SearchRadius>
+		</EntityComponent>
+	</EntityComponents></Definitions>
