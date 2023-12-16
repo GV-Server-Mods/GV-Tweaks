@@ -7,7 +7,7 @@ using VRage.Game.ModAPI;
 using VRage.ModAPI;
 using VRage.Utils;
 
-namespace MikeDude.ArmorBalance
+namespace GVTweaks.ArmorBalance
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     public class FixUnknownSignal : MySessionComponentBase

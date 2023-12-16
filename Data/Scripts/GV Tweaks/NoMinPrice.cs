@@ -20,7 +20,7 @@ using VRageMath;
 using VRageRender.Messages;
 using VRage.Network;
 
-namespace GV_Settings
+namespace GVTweaks.NoMinPrice
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     class NoMinPrice : MySessionComponentBase

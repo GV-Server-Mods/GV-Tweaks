@@ -8,7 +8,7 @@ using VRage.ModAPI;
 using VRage.ObjectBuilders;
 using VRage.Utils;
 
-namespace MikeDude.ArmorBalance
+namespace GVTweaks.ToolEnhancer
 {
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_ShipGrinder), false)]
     public class ToolEnhancer : MyGameLogicComponent
