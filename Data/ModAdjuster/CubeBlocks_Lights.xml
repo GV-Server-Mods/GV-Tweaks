@@ -8,6 +8,7 @@
 				<SubtypeId>LargeBlockFrontLight</SubtypeId>
 			</Id>
 			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
 		</Definition>
 		<Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
 			<Id>
@@ -15,6 +16,7 @@
 				<SubtypeId>SmallBlockFrontLight</SubtypeId>
 			</Id>
 			<ReflectorConeDegrees>60</ReflectorConeDegrees>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
 		</Definition>
         <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
             <Id>
@@ -22,21 +24,7 @@
                 <SubtypeId>OffsetSpotlight</SubtypeId>
             </Id>
             <ReflectorConeDegrees>60</ReflectorConeDegrees>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
         </Definition>
-		<!-- increased light distance of searchlights -->
-		<Definition xsi:type="MyObjectBuilder_SearchlightDefinition">
-			<Id>
-				<TypeId>Searchlight</TypeId>
-				<SubtypeId>SmallSearchlight</SubtypeId>
-			</Id>
-			<ReflectorConeDegrees>60</ReflectorConeDegrees>
-		</Definition>
-		<Definition xsi:type="MyObjectBuilder_SearchlightDefinition">
-			<Id>
-				<TypeId>Searchlight</TypeId>
-				<SubtypeId>LargeSearchlight</SubtypeId>
-			</Id>
-			<ReflectorConeDegrees>60</ReflectorConeDegrees>
-		</Definition>
 	</CubeBlocks>
 </Definitions>
