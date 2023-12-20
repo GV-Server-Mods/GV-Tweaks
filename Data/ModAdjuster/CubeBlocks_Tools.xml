@@ -49,14 +49,13 @@
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
-		<!-- increase impact resistance -->
+		<!-- Double welder sizeincrease impact resistance -->
 		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
 			<Id>
 				<TypeId>ShipWelder</TypeId>
 				<SubtypeId>LargeShipWelder</SubtypeId>
 			</Id>
 			<SensorRadius>2.8</SensorRadius>
-			<SensorOffset>1.0</SensorOffset>
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
@@ -66,8 +65,6 @@
 				<TypeId>ShipWelder</TypeId>
 				<SubtypeId>SmallShipWelder</SubtypeId>
 			</Id>
-			<SensorRadius>2.6</SensorRadius>
-			<SensorOffset>1</SensorOffset>
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
