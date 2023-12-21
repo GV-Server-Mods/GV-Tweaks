@@ -8,5 +8,4 @@ CubeBlocks_Shelves.xml
 CubeBlocks_Tools.xml
 EntityComponents.xml
 PhysicalItems.xml
-ResourceDistributionGroups.xml
 SessionComponents_Economy.xml
