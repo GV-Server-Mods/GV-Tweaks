@@ -49,25 +49,6 @@
 			<DeformationRatio>0.2</DeformationRatio>
 			<UsesDeformation>false</UsesDeformation>
 		</Definition>
-		<!-- Double welder sizeincrease impact resistance -->
-		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
-			<Id>
-				<TypeId>ShipWelder</TypeId>
-				<SubtypeId>LargeShipWelder</SubtypeId>
-			</Id>
-			<SensorRadius>2.8</SensorRadius>
-			<DeformationRatio>0.2</DeformationRatio>
-			<UsesDeformation>false</UsesDeformation>
-		</Definition>
-		<!-- increase impact resistance -->
-		<Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
-			<Id>
-				<TypeId>ShipWelder</TypeId>
-				<SubtypeId>SmallShipWelder</SubtypeId>
-			</Id>
-			<DeformationRatio>0.2</DeformationRatio>
-			<UsesDeformation>false</UsesDeformation>
-		</Definition>
 		<!-- added to increase range and prevent modded clients from changing this -->
 		<Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">
 			<Id>
