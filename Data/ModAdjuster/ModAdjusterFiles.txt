@@ -1,6 +1,5 @@
 Components.xml
 CubeBlocks_Control.xml
-CubeBlocks_Energy.xml
 CubeBlocks_HydrogenThrustersFX.xml
 CubeBlocks_Logistics.xml
 CubeBlocks_Production.xml
