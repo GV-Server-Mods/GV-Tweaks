@@ -7,7 +7,7 @@
                 <TypeId>OxygenGenerator</TypeId>
                 <SubtypeId></SubtypeId>
             </Id>
-            <IceConsumptionPerSecond>75</IceConsumptionPerSecond> <!-- vanilla = 25 -->
+            <IceConsumptionPerSecond>200</IceConsumptionPerSecond> <!-- vanilla = 25 -->
             <OperationalPowerConsumption>1.5</OperationalPowerConsumption> <!-- vanilla = 1.5 -->
         </Definition>
 		<!-- increase speed -->
@@ -16,7 +16,7 @@
                 <TypeId>OxygenGenerator</TypeId>
                 <SubtypeId>OxygenGeneratorSmall</SubtypeId>
             </Id>
-            <IceConsumptionPerSecond>15</IceConsumptionPerSecond> <!-- vanilla = 5 -->
+            <IceConsumptionPerSecond>40</IceConsumptionPerSecond> <!-- vanilla = 5 -->
             <OperationalPowerConsumption>0.3</OperationalPowerConsumption> <!-- vanilla = 0.1 -->
         </Definition>
 	</CubeBlocks>
