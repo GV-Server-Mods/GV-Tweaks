@@ -260,7 +260,7 @@
               <ValueFloat>4</ValueFloat>
             </Property>
             <Property AnimationType="Const" Name="Animation frame time" Type="Float">
-              <ValueFloat>0.035</ValueFloat>
+              <ValueFloat>0.03</ValueFloat>
             </Property>
             <Property AnimationType="Const" Name="Enabled" Type="Bool">
               <ValueBool>true</ValueBool>
@@ -272,7 +272,7 @@
               <ValueString>Atlas_F_01</ValueString>
             </Property>
             <Property AnimationType="Const" Name="OIT weight factor" Type="Float">
-              <ValueFloat>1</ValueFloat>
+              <ValueFloat>5</ValueFloat>
             </Property>
             <Property AnimationType="Const" Name="Collide" Type="Bool">
               <ValueBool>false</ValueBool>
@@ -373,13 +373,18 @@
                   <Value2D />
                 </Key>
                 <Key>
-                  <Time>0.09888358</Time>
+                  <Time>0.1</Time>
                   <ValueFloat>3</ValueFloat>
                   <Value2D />
                 </Key>
                 <Key>
-                  <Time>0.185008</Time>
+                  <Time>0.2</Time>
                   <ValueFloat>3</ValueFloat>
+                  <Value2D />
+                </Key>
+                <Key>
+                  <Time>0.3</Time>
+                  <ValueFloat>2</ValueFloat>
                   <Value2D />
                 </Key>
               </Keys>
