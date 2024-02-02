@@ -33,4 +33,5 @@
 			</Id>
 			<SearchRadius>6000</SearchRadius>
 		</EntityComponent>
-	</EntityComponents></Definitions>
+	</EntityComponents>
+</Definitions>
