@@ -5,6 +5,5 @@ CubeBlocks_Logistics.xml
 CubeBlocks_Production.xml
 CubeBlocks_Shelves.xml
 CubeBlocks_Tools.xml
-EntityComponents.xml
 PhysicalItems.xml
 SessionComponents_Economy.xml
