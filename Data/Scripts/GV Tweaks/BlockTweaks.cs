@@ -207,7 +207,7 @@ namespace GVTweaks.BlockTweaks
 					blockDef.GeneralDamageMultiplier = 1.0f;
 					blockDef.UsesDeformation = false;
 					blockDef.DeformationRatio = 0.45f; //this seems to be a sweet spot between completely immune to collision, and popping with more than a light bump.
-					blockDef.EdgeType = "Light";
+					blockDef.EdgeType = "Heavy";
 					blockDef.IntegrityPointsPerSec = 2500;
                 }				
             }
