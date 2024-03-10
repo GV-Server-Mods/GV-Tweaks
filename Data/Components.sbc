@@ -28,6 +28,7 @@
 			</Id>
 			<DisplayName>Special Package</DisplayName>
             <Icon>Textures\GUI\Icons\Items\ContractPackage.dds</Icon>
+			<Description>Exchange at any Trade Station for SC.</Description>
             <Size>
                 <X>0.5</X>
                 <Y>0.5</Y>
