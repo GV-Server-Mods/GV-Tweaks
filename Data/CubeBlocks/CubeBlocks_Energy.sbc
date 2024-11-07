@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
+		<!-- H2 Engines dont work with mod adjuster because FuelInfos are read only in ModAPI -->
+		<!-- Buff H2 engines because they kinda suck -->
 		<Definition xsi:type="MyObjectBuilder_HydrogenEngineDefinition">
 			<Id>
 				<TypeId>HydrogenEngine</TypeId>
@@ -58,7 +60,7 @@
 						<TypeId>GasProperties</TypeId>
 						<SubtypeId>Hydrogen</SubtypeId>
 					</Id>
-					<Ratio>0.5</Ratio>
+					<Ratio>0.5</Ratio><!-- 1.0 is 1x, 0.5 is double efficient -->
 				</FuelInfo>
 			</FuelInfos>
 			<FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
@@ -150,7 +152,7 @@
 						<TypeId>GasProperties</TypeId>
 						<SubtypeId>Hydrogen</SubtypeId>
 					</Id>
-					<Ratio>0.5</Ratio>
+					<Ratio>0.5</Ratio><!-- 1.0 is 1x, 0.5 is double efficient -->
 				</FuelInfo>
 			</FuelInfos>
 			<FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>

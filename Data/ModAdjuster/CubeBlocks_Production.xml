@@ -7,8 +7,8 @@
                 <TypeId>OxygenGenerator</TypeId>
                 <SubtypeId></SubtypeId>
             </Id>
-            <IceConsumptionPerSecond>200</IceConsumptionPerSecond> <!-- vanilla = 25 -->
-            <OperationalPowerConsumption>1.5</OperationalPowerConsumption> <!-- vanilla = 1.5 -->
+            <IceConsumptionPerSecond>400</IceConsumptionPerSecond> <!-- vanilla = 25 -->
+            <OperationalPowerConsumption>8</OperationalPowerConsumption> <!-- vanilla = 0.5 -->
         </Definition>
 		<!-- increase speed -->
         <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
@@ -17,7 +17,7 @@
                 <SubtypeId>OxygenGeneratorSmall</SubtypeId>
             </Id>
             <IceConsumptionPerSecond>40</IceConsumptionPerSecond> <!-- vanilla = 5 -->
-            <OperationalPowerConsumption>0.3</OperationalPowerConsumption> <!-- vanilla = 0.1 -->
+            <OperationalPowerConsumption>0.8</OperationalPowerConsumption> <!-- vanilla = 0.1 -->
         </Definition>
 	</CubeBlocks>
 </Definitions>
