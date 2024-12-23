@@ -163,5 +163,581 @@
             <IsAirTight>false</IsAirTight>
             <DLC>ScrapRace</DLC>
         </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>LargeBlockFloodlight</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_Floodlight</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLight.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Large\FloodLight.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="8"></Component>
+                <Component Subtype="Girder" Count="10"></Component>
+                <Component Subtype="InteriorPlate" Count="10"></Component>
+                <Component Subtype="Construction" Count="20"></Component>
+                <Component Subtype="BulletproofGlass" Count="4"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0.46" EndX="0.08" EndY="0.54"></MountPoint>
+                <MountPoint Side="Left" StartX="0.92" StartY="0.46" EndX="1" EndY="0.54"></MountPoint>
+                <MountPoint Side="Back" StartX="0" StartY="0.46" EndX="1" EndY="0.54" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\FloodLightConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\FloodLightConstruction_2.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\FloodLightConstruction_3.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLight</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+			<LightRadius Min="2" Max="40" Default="20"/>
+			<LightReflectorRadius Min="10" Max="640" Default="160"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="1"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.001</RequiredPowerInput>
+            <Flare>SpotlightLarge</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>4</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>100</ReflectorConeDegrees>
+            <LightOnlyNoEffectsDummyName>LightNoEffects</LightOnlyNoEffectsDummyName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Large</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>LargeBlockFloodlightAngled</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightAngled</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightAngled.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Large\FloodLightAngled.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="8"></Component>
+                <Component Subtype="Girder" Count="10"></Component>
+                <Component Subtype="InteriorPlate" Count="10"></Component>
+                <Component Subtype="Construction" Count="20"></Component>
+                <Component Subtype="BulletproofGlass" Count="4"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0.46" EndX="0.08" EndY="0.54"></MountPoint>
+                <MountPoint Side="Left" StartX="0.92" StartY="0.46" EndX="1" EndY="0.54"></MountPoint>
+                <MountPoint Side="Back" StartX="0" StartY="0.46" EndX="1" EndY="0.54" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\FloodLightAngledConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\FloodLightAngledConstruction_2.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\FloodLightAngledConstruction_3.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightAngled</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+			<LightRadius Min="2" Max="40" Default="20"/>
+			<LightReflectorRadius Min="10" Max="640" Default="160"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="1"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.001</RequiredPowerInput>
+            <Flare>SpotlightLarge</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>4</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>100</ReflectorConeDegrees>
+            <LightOnlyNoEffectsDummyName>LightNoEffects</LightOnlyNoEffectsDummyName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Large</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>LargeBlockFloodlightCornerL</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightCornerL</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightCornerL.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Large\FloodLightCornerL.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="8"></Component>
+                <Component Subtype="Girder" Count="10"></Component>
+                <Component Subtype="InteriorPlate" Count="10"></Component>
+                <Component Subtype="Construction" Count="20"></Component>
+                <Component Subtype="BulletproofGlass" Count="4"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0.46" EndX="0.08" EndY="0.54"></MountPoint>
+                <MountPoint Side="Left" StartX="0.92" StartY="0.46" EndX="1" EndY="0.54"></MountPoint>
+                <MountPoint Side="Back" StartX="0" StartY="0.46" EndX="1" EndY="0.54" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\FloodLightCornerLConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\FloodLightCornerLConstruction_2.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\FloodLightCornerLConstruction_3.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightCornerL</BlockPairName>
+            <MirroringBlock>LargeBlockFloodlightCornerR</MirroringBlock>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+			<LightRadius Min="2" Max="40" Default="20"/>
+			<LightReflectorRadius Min="10" Max="640" Default="160"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="1"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.001</RequiredPowerInput>
+            <Flare>SpotlightLarge</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>4</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>100</ReflectorConeDegrees>
+            <LightOnlyNoEffectsDummyName>LightNoEffects</LightOnlyNoEffectsDummyName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Large</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>LargeBlockFloodlightCornerR</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightCornerR</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightCornerR.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Large\FloodLightCornerR.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="8"></Component>
+                <Component Subtype="Girder" Count="10"></Component>
+                <Component Subtype="InteriorPlate" Count="10"></Component>
+                <Component Subtype="Construction" Count="20"></Component>
+                <Component Subtype="BulletproofGlass" Count="4"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0.46" EndX="0.08" EndY="0.54"></MountPoint>
+                <MountPoint Side="Left" StartX="0.92" StartY="0.46" EndX="1" EndY="0.54"></MountPoint>
+                <MountPoint Side="Back" StartX="0" StartY="0.46" EndX="1" EndY="0.54" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\FloodLightCornerRConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\FloodLightCornerRConstruction_2.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\FloodLightCornerRConstruction_3.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightCornerR</BlockPairName>
+            <MirroringBlock>LargeBlockFloodlightCornerL</MirroringBlock>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+			<LightRadius Min="2" Max="40" Default="20"/>
+			<LightReflectorRadius Min="10" Max="640" Default="160"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="1"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.001</RequiredPowerInput>
+            <Flare>SpotlightLarge</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>4</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>100</ReflectorConeDegrees>
+            <LightOnlyNoEffectsDummyName>LightNoEffects</LightOnlyNoEffectsDummyName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Large</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlight</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_Floodlight</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLight_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLight.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0.04" StartY="0.22" EndX="0.96" EndY="0.78" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLight</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlightAngled</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightAngled</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightAngled_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLightAngled.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0.04" StartY="0.22" EndX="0.96" EndY="0.78" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightAngledConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightAngledConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightAngled</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlightCornerL</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightCornerL</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightCornerL_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLightCornerL.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0.04" StartY="0.22" EndX="0.96" EndY="0.78" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightCornerLConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightCornerLConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightCornerL</BlockPairName>
+            <MirroringBlock>SmallBlockFloodlightCornerR</MirroringBlock>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlightCornerR</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightCornerR</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightCornerR_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLightCornerR.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0.04" StartY="0.22" EndX="0.96" EndY="0.78" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightCornerRConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightCornerRConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightCornerR</BlockPairName>
+            <MirroringBlock>SmallBlockFloodlightCornerL</MirroringBlock>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlightDown</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightDown</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightDown_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLightDown.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0.04" StartY="0.22" EndX="0.96" EndY="0.78" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightDownConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightDownConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightDown</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition">
+            <Id>
+                <TypeId>ReflectorLight</TypeId>
+                <SubtypeId>SmallBlockFloodlightAngledRotated</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_FloodlightAngledRotated</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FloodLightAngledRotated_small.dds</Icon>
+            <Description>Description_ReflectorLight</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"></Size>
+            <ModelOffset x="0" y="0" z="0"></ModelOffset>
+            <Model>Models\Cubes\Small\FloodLightAngledRotated.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"></Component>
+                <Component Subtype="Girder" Count="4"></Component>
+                <Component Subtype="InteriorPlate" Count="1"></Component>
+                <Component Subtype="Construction" Count="1"></Component>
+                <Component Subtype="BulletproofGlass" Count="2"></Component>
+            </Components>
+            <CriticalComponent Subtype="Construction" Index="0"></CriticalComponent>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true"></MountPoint>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\FloodLightAngledRotatedConstruction_1.mwm"></Model>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\FloodLightAngledRotatedConstruction_2.mwm"></Model>
+            </BuildProgressModels>
+            <BlockPairName>FloodLightRotated</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>ZHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>7</BuildTimeSeconds>
+			<LightRadius Min="1" Max="5" Default="5"/>
+			<LightReflectorRadius Min="10" Max="480" Default="120"/>
+			<LightFalloff Min="1" Max="3" Default="1.5"/>
+			<LightIntensity Min="0.5" Max="5" Default="3"/>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+            <Flare>SpotlightSmall</Flare>
+            <PointLightEmissiveMaterial>Emissive</PointLightEmissiveMaterial>
+            <SpotLightEmissiveMaterial>EmissiveSpotlight</SpotLightEmissiveMaterial>
+            <ReflectorThickness>2</ReflectorThickness>
+            <ReflectorTexture>Textures\Lights\reflector_large_clean.dds</ReflectorTexture>
+            <ReflectorConeDegrees>90</ReflectorConeDegrees>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Medium</DestroyEffect>
+            <DestroySound>PoofExplosionCat2</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <IsStandAlone>false</IsStandAlone>
+            <DLC>Contact</DLC>
+        </Definition>
 	</CubeBlocks>
 </Definitions>
