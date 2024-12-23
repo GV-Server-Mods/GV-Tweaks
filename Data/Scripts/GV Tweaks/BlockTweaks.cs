@@ -152,11 +152,11 @@ namespace GVTweaks.BlockTweaks
 					{
 						if (reactorDef.Size.Volume() <= 1f)
 						{
-							reactorDef.MaxPowerOutput = 0.5f; // 2:1 power output density to batteries
+							reactorDef.MaxPowerOutput = 1.0f; // 4:1 power output density to batteries
 						}
 						else
 						{
-							reactorDef.MaxPowerOutput = 15f; // Bonus for large variant
+							reactorDef.MaxPowerOutput = 30f; // Bonus for large variant
 						}
 					}
 					//buffing output of NPC Proprietary reactors, and making them not require fuel
