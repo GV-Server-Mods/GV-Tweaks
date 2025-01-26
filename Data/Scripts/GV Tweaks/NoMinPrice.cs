@@ -31,7 +31,7 @@ namespace GVTweaks.NoMinPrice
             var allDefs = MyDefinitionManager.Static.GetAllDefinitions();
 
             foreach(var component in allDefs.OfType<MyPhysicalItemDefinition>()){
-                component.MinimalPricePerUnit = 0;
+                component.MinimalPricePerUnit = 1;
             }
         }
     }
