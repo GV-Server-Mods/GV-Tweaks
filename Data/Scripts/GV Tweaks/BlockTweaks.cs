@@ -185,22 +185,7 @@ namespace GVTweaks.BlockTweaks
                 {
                     ReplaceComponent(cargoDef, cargoDef.Components.Length - 1, steelPlateComponent, cargoDef.Size.Volume() > 1 ? 120 : 40);
                 }
-				
-				//H2 tanks
-                if (hydroTankDef != null && hydroTankDef.StoredGasId.SubtypeName == "Hydrogen")
-                {
-                    hydroTankDef.LeakPercent = 0.025f;
-                    hydroTankDef.Capacity = (float)Math.Ceiling(hydroTankDef.Size.Volume() * Math.Pow(hydroTankDef.CubeSize == MyCubeSize.Large ? 2.5 : 0.5, 3) * hydroTankH2Density);
-                    hydroTankDef.GasExplosionMaxRadius = hydroTankDef.Size.Length() * (hydroTankDef.CubeSize == MyCubeSize.Large ? 2.5f : 0.5f);
-                    hydroTankDef.GasExplosionDamageMultiplier = 0.00015f;
-                    if (string.IsNullOrEmpty(hydroTankDef.GasExplosionSound))
-                    {
-                        hydroTankDef.GasExplosionSound = "HydrogenExplosion";
-                    }
-                    hydroTankDef.GasExplosionNeededVolumeToReachMaxRadius = hydroTankDef.Capacity;
-                }
-
-				
+								
 				//Make all 5x5 XL blocks have light edge type, and no deformation, and increase weld time
                 if (blockDef.CubeSize == MyCubeSize.Large && blockDef.Id.SubtypeName.Contains("XL_") && blockDef.BlockTopology == MyBlockTopology.TriangleMesh)
                 {
