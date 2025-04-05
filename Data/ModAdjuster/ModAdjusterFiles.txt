@@ -6,4 +6,3 @@ CubeBlocks_Production.xml
 CubeBlocks_Shelves.xml
 CubeBlocks_Tools.xml
 PhysicalItems.xml
-SessionComponents_Economy.xml

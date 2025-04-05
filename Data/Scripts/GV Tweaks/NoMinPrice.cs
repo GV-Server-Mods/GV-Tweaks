@@ -32,6 +32,7 @@ namespace GVTweaks.NoMinPrice
 
             foreach(var component in allDefs.OfType<MyPhysicalItemDefinition>()){
                 component.MinimalPricePerUnit = 1;
+				// list fee and transaction fee are not whitelisted in mod API
             }
         }
     }
