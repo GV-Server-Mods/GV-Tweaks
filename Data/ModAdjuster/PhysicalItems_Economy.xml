@@ -9,7 +9,7 @@
 			<Stats>
 				<Stat Name="Health" Value="0.20" Time="10"/>
 			</Stats>
-			<MinimalPricePerUnit>0</MinimalPricePerUnit>
+			<MinimalPricePerUnit>1</MinimalPricePerUnit>
 			<CanPlayerOrder>true</CanPlayerOrder>
 		</PhysicalItem>
 		<PhysicalItem xsi:type="MyObjectBuilder_ConsumableItemDefinition">
@@ -20,7 +20,7 @@
 			<Stats>
 				<Stat Name="BatteryCharge" Value="0.20" Time="10"/>
 			</Stats>
-			<MinimalPricePerUnit>0</MinimalPricePerUnit>
+			<MinimalPricePerUnit>1</MinimalPricePerUnit>
 			<CanPlayerOrder>true</CanPlayerOrder>
 		</PhysicalItem>
 	</PhysicalItems>
