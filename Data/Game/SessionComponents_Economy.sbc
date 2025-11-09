@@ -6,7 +6,7 @@
             <TypeId>MyObjectbuilder_SessionComponentEconomyDefinition</TypeId>
             <SubtypeId>Default</SubtypeId>
         </Id>
-		
+
 		<!-- Added fees here because they are not in the Mod API whitelist -->
 		<ListingFee>0</ListingFee>
 		<TransactionFee>0</TransactionFee>
@@ -46,5 +46,12 @@
             <TypeId>MyObjectBuilder_Datapad</TypeId>
             <SubtypeId>Datapad</SubtypeId>
         </DatapadDefinition>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_SessionComponentContractSystemDefinition">
+        <Id>
+            <TypeId>MyObjectBuilder_SessionComponentContractSystemDefinition</TypeId>
+            <SubtypeId>Default</SubtypeId>
+        </Id>
+        <ContractPerPlayerLimit>3</ContractPerPlayerLimit>
     </Definition>
 </Definitions>

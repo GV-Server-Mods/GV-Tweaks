@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- limit equipment in basic assemblers, and remove extra fireworks -->
 	<BlueprintClasses>
         <Class>
             <Id>
                 <TypeId>BlueprintClassDefinition</TypeId>
-                <SubtypeId>GVKBasicEquipment</SubtypeId>
+                <SubtypeId>GVBasicEquipment</SubtypeId>
             </Id>
             <DisplayName>Basic Equipment</DisplayName>
             <Description>Basic Equipment</Description>
@@ -16,7 +17,7 @@
         <Class>
             <Id>
                 <TypeId>BlueprintClassDefinition</TypeId>
-                <SubtypeId>GVKEliteEquipment</SubtypeId>
+                <SubtypeId>GVEliteEquipment</SubtypeId>
             </Id>
             <DisplayName>Equipment</DisplayName>
             <Description>Equipment</Description>
@@ -28,19 +29,19 @@
 	</BlueprintClasses>
 	<BlueprintClassEntries>
 		<!-- Basic Assemblers -->	
-		<Entry Class="GVKBasicEquipment" BlueprintSubtypeId="Position0040_Datapad" />
-        <Entry Class="GVKBasicEquipment" BlueprintSubtypeId="Position0010_OxygenBottle" />
-        <Entry Class="GVKBasicEquipment" BlueprintSubtypeId="Position0020_HydrogenBottle" />
-		<Entry Class="GVKBasicEquipment" BlueprintSubtypeId="Position0030_Canvas" />
-		<Entry Class="GVKBasicEquipment" BlueprintSubtypeId="Position0040_Datapad" />
+		<Entry Class="GVBasicEquipment" BlueprintSubtypeId="Position0040_Datapad" />
+        <Entry Class="GVBasicEquipment" BlueprintSubtypeId="Position0010_OxygenBottle" />
+        <Entry Class="GVBasicEquipment" BlueprintSubtypeId="Position0020_HydrogenBottle" />
+		<Entry Class="GVBasicEquipment" BlueprintSubtypeId="Position0030_Canvas" />
+		<Entry Class="GVBasicEquipment" BlueprintSubtypeId="Position0040_Datapad" />
 		<!-- Large Assemblers -->	
-		<Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position0040_Datapad" />
-        <Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position0010_OxygenBottle" />
-        <Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position0020_HydrogenBottle" />
-		<Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position0030_Canvas" />
-		<Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position0040_Datapad" />
-        <Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Position00075_FireworksBoxRainbow" />
-		<Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Medkit"/>
-		<Entry Class="GVKEliteEquipment" BlueprintSubtypeId="Powerkit"/>
+		<Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0040_Datapad" />
+        <Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0010_OxygenBottle" />
+        <Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0020_HydrogenBottle" />
+		<Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0021_Medkit"/>
+		<Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0022_Powerkit"/>
+		<Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0030_Canvas" />
+		<Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position0040_Datapad" />
+        <Entry Class="GVEliteEquipment" BlueprintSubtypeId="Position00075_FireworksBoxRainbow" />
 	</BlueprintClassEntries>
 </Definitions>

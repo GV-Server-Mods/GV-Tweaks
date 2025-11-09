@@ -7,6 +7,8 @@ using VRage.Game.ModAPI;
 using VRage.ModAPI;
 using VRage.Utils;
 
+// This changes the owner of unk signals if for some reason it picks a real player's entity ID
+
 namespace GVTweaks.ArmorBalance
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]

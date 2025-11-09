@@ -20,6 +20,9 @@ using VRageMath;
 using VRageRender.Messages;
 using VRage.Network;
 
+// Set min price to 1 for custom player store listings
+// List & transaction fees are not whitelisted in mod API. Edit those in SessionComponents_Economy.sbc
+
 namespace GVTweaks.NoMinPrice
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
@@ -32,7 +35,6 @@ namespace GVTweaks.NoMinPrice
 
             foreach(var component in allDefs.OfType<MyPhysicalItemDefinition>()){
                 component.MinimalPricePerUnit = 1;
-				// list fee and transaction fee are not whitelisted in mod API
             }
         }
     }

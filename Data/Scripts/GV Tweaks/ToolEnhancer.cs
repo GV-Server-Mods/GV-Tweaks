@@ -8,6 +8,8 @@ using VRage.ModAPI;
 using VRage.ObjectBuilders;
 using VRage.Utils;
 
+// This increases ship tool inventory size a little to reduce clogging
+
 namespace GVTweaks.ToolEnhancer
 {
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_ShipGrinder), false)]

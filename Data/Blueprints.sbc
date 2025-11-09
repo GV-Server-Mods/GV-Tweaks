@@ -30,9 +30,9 @@
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Medkit</SubtypeId>
+				<SubtypeId>Position0021_Medkit</SubtypeId>
 			</Id>
-			<DisplayName>DisplayName_Item_Medkit</DisplayName>
+			<DisplayName>DisplayName_Blueprint_Medkit</DisplayName>
 			<Icon>Textures\GUI\Icons\Items\MedKit.dds</Icon>
 			<Prerequisites>
 				<Item Amount="0.05" TypeId="Ingot" SubtypeId="Gold"/>
@@ -48,9 +48,9 @@
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Powerkit</SubtypeId>
+				<SubtypeId>Position0022_Powerkit</SubtypeId>
 			</Id>
-			<DisplayName>DisplayName_Item_Powerkit</DisplayName>
+			<DisplayName>DisplayName_Blueprint_Powerkit</DisplayName>
 			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
 			<Prerequisites>
 				<Item Amount="0.05" TypeId="Ingot" SubtypeId="Silver"/>
