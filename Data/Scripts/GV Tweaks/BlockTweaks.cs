@@ -47,7 +47,6 @@ namespace GVTweaks.BlockTweaks
                 var timerBlockDef = blockDef as MyTimerBlockDefinition;
                 var hydroTankDef = blockDef as MyGasTankDefinition;
                 var welderDef = blockDef as MyShipWelderDefinition;
-                var oxygenGeneratorDef = blockDef as MyOxygenGeneratorDefinition;
                 var batteryDef = blockDef as MyBatteryBlockDefinition;
                 var laserAntennaDef = blockDef as MyLaserAntennaDefinition;
                 var cargoDef = blockDef as MyCargoContainerDefinition;
